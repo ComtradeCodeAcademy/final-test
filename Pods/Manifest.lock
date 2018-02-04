@@ -1,14 +1,17 @@
 PODS:
+  - LocationPicker (1.1.0)
   - SwiftInstagram (1.1.0):
     - SwiftInstagram/Core (= 1.1.0)
   - SwiftInstagram/Core (1.1.0)
 
 DEPENDENCIES:
+  - LocationPicker
   - SwiftInstagram (~> 1.1.0)
 
 SPEC CHECKSUMS:
+  LocationPicker: 94dbd15ee053646d5c275d44b4dfce8634d66041
   SwiftInstagram: 90d5c143d8ebe1c790e06a138b8da3c8f2a9ba16
 
-PODFILE CHECKSUM: b26df78b569c81a8edc3c89e01e7f93a59d9e263
+PODFILE CHECKSUM: 6b094d6ec7e99a91f952bcac61b548d0a1be522c
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.4.0
