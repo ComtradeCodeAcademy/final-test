@@ -11,7 +11,7 @@ import SwiftInstagram
 import LocationPicker
 import CoreLocation
 
-class MapViewController: UIViewController {
+class MapViewController: LocationPickerViewController {
     
     var post: InstagramMedia?
     
@@ -23,8 +23,8 @@ class MapViewController: UIViewController {
         let locationPicker = LocationPickerViewController()
         
         // you can optionally set initial location
-                _ = CLLocation(latitude: 44.834561, longitude: 20.411077)
-//        let initialLocation = Location(name: "Comtrade-Code", location: location)
+//                _ = CLLocation(latitude: 44.834561, longitude: 20.411077)
+//        let initialLocation = Location(name: "Comtrade-Code", location: Location)
 //        locationPicker.location = initialLocation
         
         // button placed on right bottom corner
@@ -46,7 +46,7 @@ class MapViewController: UIViewController {
         locationPicker.searchHistoryLabel = "Previously searched" // default: "Search History"
         
         // optional region distance to be used for creation region when user selects place from search results
-        locationPicker.resultRegionDistance = 500 // default: 600
+        locationPicker.resultRegionDistance = 600 // default: 600
         
         locationPicker.completion = { location in
             // do some awesome stuff with location
