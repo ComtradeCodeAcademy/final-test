@@ -33,6 +33,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         locationManager!.requestAlwaysAuthorization()
         locationManager!.distanceFilter = 50
         
+        self.mapView.showsUserLocation = true
+        
         if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
             locationManager!.startUpdatingLocation()
         } else {
