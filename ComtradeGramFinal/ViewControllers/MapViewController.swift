@@ -27,8 +27,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         
         locationManager = CLLocationManager()
         locationManager!.delegate = self
-        
-        locationManager!.delegate = self
         locationManager!.desiredAccuracy = kCLLocationAccuracyBestForNavigation
         locationManager!.requestAlwaysAuthorization()
         locationManager!.distanceFilter = 50
@@ -42,9 +40,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         }
         
     }
-    
-    //https://stackoverflow.com/questions/35685006/how-i-can-center-the-map-on-users-location-in-swift
-    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -153,9 +148,9 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
             mapView.showsUserLocation = true
             
             mapView.removeAnnotation(self.postPin)
-
             
-    
+            
+            
             //set region on the map
             mapView.setRegion(region, animated: true)
             
@@ -163,14 +158,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
                 postPin.coordinate = coordinates
                 mapView.addAnnotation(postPin)
             }
-
-            
-//            var annotation = MKPointAnnotation.init()
-//            annotation.coordinate = CLLocationCoordinate2D(latitude: 11.12, longitude: 12.11)
-//            mapView.addAnnotation(annotation)
-        
-        
-        
         }
     }
     
@@ -184,97 +171,3 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//
-//
-////
-////  ViewController.swift
-////  ComtradeGramFinal
-////
-////  Created by Predrag Jevtic on 1/10/18.
-////  Copyright © 2018 com.comtrade.Gram. All rights reserved.
-////
-//
-//import UIKit
-//import SwiftInstagram
-//import LocationPicker
-//import CoreLocation
-//
-//class MapViewController: UIViewController {
-//
-//    var post: InstagramMedia?
-//
-//    let locationPicker = LocationPickerViewController()
-//
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//
-//        // Do any additional setup after loading the view, typically from a nib.
-//
-//
-//
-//        // you can optionally set initial location
-////                _ = CLLocation(latitude: 44.834561, longitude: 20.411077)
-////        let initialLocation = Location(name: "Comtrade-Code", location: Location)
-////        locationPicker.location = initialLocation
-//
-//        // button placed on right bottom corner
-//        locationPicker.showCurrentLocationButton = true // default: true
-//
-//        // default: navigation bar's `barTintColor` or `.whiteColor()`
-//        locationPicker.currentLocationButtonBackground = .red
-//
-//        // ignored if initial location is given, shows that location instead
-//        locationPicker.showCurrentLocationInitially = true // default: true
-//
-//        locationPicker.mapType = .standard // default: .Hybrid
-//
-//        // for searching, see `MKLocalSearchRequest`'s `region` property
-//        locationPicker.useCurrentLocationAsHint = true // default: false
-//
-//        locationPicker.searchBarPlaceholder = "Search places" // default: "Search or enter an address"
-//
-//        locationPicker.searchHistoryLabel = "Previously searched" // default: "Search History"
-//
-//        // optional region distance to be used for creation region when user selects place from search results
-//        locationPicker.resultRegionDistance = 600 // default: 600
-//
-//        locationPicker.completion = { location in
-//            // do some awesome stuff with location
-//
-//        }
-//
-//        navigationController?.pushViewController(locationPicker, animated: true)
-//
-//    }
-//
-//    override func didReceiveMemoryWarning() {
-//        super.didReceiveMemoryWarning()
-//        // Dispose of any resources that can be recreated.
-//    }
-//
-//
-//}
-//
-//
