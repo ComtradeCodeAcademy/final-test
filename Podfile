@@ -8,7 +8,7 @@ target 'ComtradeGramFinal' do
   # Pods for ComtradeGramFinal
 
   pod 'SwiftInstagram', '~> 1.1.0'
-pod 'LocationPicker'
+
 
   target 'ComtradeGramFinalTests' do
     inherit! :search_paths
