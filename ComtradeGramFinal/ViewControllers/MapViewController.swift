@@ -143,20 +143,22 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
             let location = self.post?.location
             let center = self.post?.location?.coordinates
             
-            let region = MKCoordinateRegion(center: center!, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
-            mapView.setRegion(region, animated: true)
-            mapView.showsUserLocation = true
+            if let center = center {
+                let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
+                mapView.setRegion(region, animated: true)
+                mapView.showsUserLocation = true
+                
+                mapView.removeAnnotation(self.postPin)
             
-            mapView.removeAnnotation(self.postPin)
             
             
-            
-            //set region on the map
-            mapView.setRegion(region, animated: true)
-            
-            if let coordinates = location?.coordinates {
-                postPin.coordinate = coordinates
-                mapView.addAnnotation(postPin)
+                //set region on the map
+                mapView.setRegion(region, animated: true)
+                
+                if let coordinates = location?.coordinates {
+                    postPin.coordinate = coordinates
+                    mapView.addAnnotation(postPin)
+                }
             }
         }
     }
