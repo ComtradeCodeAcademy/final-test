@@ -41,9 +41,9 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        print(self.post?.location?.coordinates.latitude)
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
         self.updatePostLocation()
     }
     
@@ -56,7 +56,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         
     }
     
-    func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+    private func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
         
         
         switch status {
@@ -74,46 +74,25 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         }
     }
     
-    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        
-        let location = locations.first!
-        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, 500, 500)
-        mapView.setRegion(coordinateRegion, animated: true)
-        locationManager?.stopUpdatingLocation()
-        locationManager = nil
-    }
-    
-    func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
-        print("Failed to initialize GPS: ", error.description)
-    }
-    
     
     // present user location on map
     // get post location latitude and longitude and present it's pointer
     // add annotation view with title: postName and description
     
     
-    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView?
-    {
-        if annotation is MKUserLocation {return nil}
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        if annotation is MKUserLocation { return nil }
         
-        let reuseId = "pin"
-        
-        var pinView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseId) as? MKPinAnnotationView
-        if pinView == nil {
-            pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: reuseId)
-            pinView!.canShowCallout = true
-            pinView!.animatesDrop = true
-            let calloutButton = UIButton(type: .detailDisclosure)
-            pinView!.rightCalloutAccessoryView = calloutButton
-            pinView!.sizeToFit()
-        }
-        else {
-            pinView!.annotation = annotation
+        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: "identifier") as? MKPinAnnotationView
+        if annotationView == nil {
+            annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: "identifier")
+            annotationView?.canShowCallout = true
+            //            annotationView?.rightCalloutAccessoryView = UIButton(type: .infoLight)
+        } else {
+            annotationView?.annotation = annotation
         }
         
-        
-        return pinView
+        return annotationView
     }
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
@@ -141,22 +120,26 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     func updatePostLocation() {
         if let mapView = self.mapView {
             let location = self.post?.location
-            let center = self.post?.location?.coordinates
+            let center = self.post?.location
             
             if let center = center {
-                let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
+                let region = MKCoordinateRegion(center: center.coordinates, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
                 mapView.setRegion(region, animated: true)
                 mapView.showsUserLocation = true
                 
                 mapView.removeAnnotation(self.postPin)
-            
-            
-            
+                
                 //set region on the map
                 mapView.setRegion(region, animated: true)
                 
                 if let coordinates = location?.coordinates {
                     postPin.coordinate = coordinates
+                    
+                    // Add an annotation
+                    
+                    postPin.title = self.post?.user.username
+                    postPin.subtitle = self.post?.caption?.text
+                    
                     mapView.addAnnotation(postPin)
                 }
             }
@@ -172,4 +155,3 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     }
     
 }
-

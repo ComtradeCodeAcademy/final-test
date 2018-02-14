@@ -25,7 +25,6 @@
 		0784C4DB2019196F000E942E /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0784C4DA2019196F000E942E /* UIImageView.swift */; };
 		90C2055B863CC46A8EC5F904 /* Pods_ComtradeGramFinalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DE6CDDB43799CA87D77C0B2 /* Pods_ComtradeGramFinalTests.framework */; };
 		B2DB6D372B1B2596201149ED /* Pods_ComtradeGramFinal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA36AD9161F49952F5BD6D08 /* Pods_ComtradeGramFinal.framework */; };
-		D13019AF20344E7C00803D15 /* PinAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13019AE20344E7C00803D15 /* PinAnnotation.swift */; };
 		D146B64620337E350060983D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D146B64520337E350060983D /* MapKit.framework */; };
 		EB1FCA11AEBC2E7CA61E80C9 /* Pods_ComtradeGramFinalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5972BEBF5F29AFF33D431699 /* Pods_ComtradeGramFinalUITests.framework */; };
 /* End PBXBuildFile section */
@@ -78,7 +77,6 @@
 		9CAB271CD111DF6FF66E1E89 /* Pods-ComtradeGramFinal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComtradeGramFinal.release.xcconfig"; path = "Pods/Target Support Files/Pods-ComtradeGramFinal/Pods-ComtradeGramFinal.release.xcconfig"; sourceTree = "<group>"; };
 		A3A5C9D7385833C8A86AED69 /* Pods-ComtradeGramFinalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComtradeGramFinalUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ComtradeGramFinalUITests/Pods-ComtradeGramFinalUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C8497E9560F46BE726082DDE /* Pods-ComtradeGramFinalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComtradeGramFinalUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ComtradeGramFinalUITests/Pods-ComtradeGramFinalUITests.release.xcconfig"; sourceTree = "<group>"; };
-		D13019AE20344E7C00803D15 /* PinAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinAnnotation.swift; sourceTree = "<group>"; };
 		D146B64520337E350060983D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		DA36AD9161F49952F5BD6D08 /* Pods_ComtradeGramFinal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ComtradeGramFinal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -121,7 +119,6 @@
 				071CE9A42025C7D700BEEAAD /* SearchViewController copy.swift */,
 				071E5FD82018F667001B8FE6 /* LoginViewController.swift */,
 				071CE99E2025C79F00BEEAAD /* MapViewController.swift */,
-				D13019AE20344E7C00803D15 /* PinAnnotation.swift */,
 				071CE9A62025D47400BEEAAD /* SettingsViewController.swift */,
 				073C19472006891100F7816E /* HomeViewController.swift */,
 			);
@@ -512,7 +509,6 @@
 				0784C4DB2019196F000E942E /* UIImageView.swift in Sources */,
 				073C19482006891100F7816E /* HomeViewController.swift in Sources */,
 				073C194E2006891100F7816E /* ComtradeGramFinal.xcdatamodeld in Sources */,
-				D13019AF20344E7C00803D15 /* PinAnnotation.swift in Sources */,
 				071CE99D2025C78600BEEAAD /* ProfileViewController.swift in Sources */,
 				071CE99F2025C79F00BEEAAD /* MapViewController.swift in Sources */,
 				071CE9A52025C7D700BEEAAD /* SearchViewController copy.swift in Sources */,

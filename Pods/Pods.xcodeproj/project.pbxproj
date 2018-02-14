@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -56,7 +56,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02BC0BCCDCA39772BCE8638E4AE87209 /* Pods-ComtradeGramFinal.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ComtradeGramFinal.modulemap"; sourceTree = "<group>"; };
+		02BC0BCCDCA39772BCE8638E4AE87209 /* Pods-ComtradeGramFinal.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ComtradeGramFinal.modulemap"; sourceTree = "<group>"; };
 		0EC2ED43E4B8CDCA408471459E02B196 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F1F98F44EA86EE775FF474BD9C41E50 /* Pods-ComtradeGramFinalTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ComtradeGramFinalTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		1321DE22E844F58B6A60203CCAE5B325 /* Pods-ComtradeGramFinalUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ComtradeGramFinalUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -71,7 +71,7 @@
 		3CF983BD43573BC6185CBD50745D474A /* InstagramTag.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InstagramTag.swift; path = Sources/Models/InstagramTag.swift; sourceTree = "<group>"; };
 		405FFCC627D63A5C8EED744B986B99B0 /* InstagramResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InstagramResponse.swift; path = Sources/Models/InstagramResponse.swift; sourceTree = "<group>"; };
 		4A0093C572B52EC6B29C22E74F17F4A7 /* Pods-ComtradeGramFinalUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ComtradeGramFinalUITests-dummy.m"; sourceTree = "<group>"; };
-		5364C7ECB0B54F05C662D5BD7AECC715 /* Pods-ComtradeGramFinalTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ComtradeGramFinalTests.modulemap"; sourceTree = "<group>"; };
+		5364C7ECB0B54F05C662D5BD7AECC715 /* Pods-ComtradeGramFinalTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ComtradeGramFinalTests.modulemap"; sourceTree = "<group>"; };
 		5459F6107395C04B50BDFB4BB890A284 /* InstagramError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InstagramError.swift; path = Sources/Models/InstagramError.swift; sourceTree = "<group>"; };
 		59F760CDEB68A960E4267FDEA581533E /* InstagramComment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InstagramComment.swift; path = Sources/Models/InstagramComment.swift; sourceTree = "<group>"; };
 		5A8D05B1D818E99A709030388A5C776B /* Pods-ComtradeGramFinal-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ComtradeGramFinal-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 		64CA6678FEF9FD10F1B362CAE896AB37 /* Pods-ComtradeGramFinalUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ComtradeGramFinalUITests-resources.sh"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6952E10C2562D093D2EE5A6B838D3499 /* Pods-ComtradeGramFinalTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ComtradeGramFinalTests-dummy.m"; sourceTree = "<group>"; };
-		6BE16F74625E8874E57C596D69F3C091 /* Pods-ComtradeGramFinalUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ComtradeGramFinalUITests.modulemap"; sourceTree = "<group>"; };
+		6BE16F74625E8874E57C596D69F3C091 /* Pods-ComtradeGramFinalUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ComtradeGramFinalUITests.modulemap"; sourceTree = "<group>"; };
 		72E9DC0D32FA138583A43B70E0CA70E7 /* URL+SwiftInstagram.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URL+SwiftInstagram.swift"; path = "Sources/Extensions/URL+SwiftInstagram.swift"; sourceTree = "<group>"; };
 		73386F2DC02441DE1EA8A8ABA86F8082 /* SwiftInstagram-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftInstagram-prefix.pch"; sourceTree = "<group>"; };
 		7DD3DFAB93B367B7CE7D352414031B2A /* Tags.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Tags.swift; path = Sources/Endpoints/Tags.swift; sourceTree = "<group>"; };
@@ -94,13 +94,13 @@
 		8DDFEC1CB32443ECA2E76A1F5A2E2096 /* Pods-ComtradeGramFinal-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ComtradeGramFinal-umbrella.h"; sourceTree = "<group>"; };
 		8ED58EB51A048A153C2C85825C7291F1 /* Pods-ComtradeGramFinal-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ComtradeGramFinal-acknowledgements.plist"; sourceTree = "<group>"; };
 		8F663B530A1A4688ACC3B40CD9DA7348 /* Relationships.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Relationships.swift; path = Sources/Endpoints/Relationships.swift; sourceTree = "<group>"; };
-		937B8453C2192ADFD4BF8093DC6E3E86 /* Pods_ComtradeGramFinalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ComtradeGramFinalTests.framework; path = "Pods-ComtradeGramFinalTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		937B8453C2192ADFD4BF8093DC6E3E86 /* Pods_ComtradeGramFinalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ComtradeGramFinalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9C6F566B5FA4830FDEECE6B316873BFF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E3EA29F8ED0420088E9D580E96F5E0F /* InstagramLocation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InstagramLocation.swift; path = Sources/Models/InstagramLocation.swift; sourceTree = "<group>"; };
 		A0D081A4BF2C927FE77599076679B292 /* Media.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Media.swift; path = Sources/Endpoints/Media.swift; sourceTree = "<group>"; };
 		A1E1A853F8A9B1B3130405C1490E2380 /* Pods-ComtradeGramFinalTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ComtradeGramFinalTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A21140C5740B6CA37E34881B3D2DB30B /* Pods_ComtradeGramFinalUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ComtradeGramFinalUITests.framework; path = "Pods-ComtradeGramFinalUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A21140C5740B6CA37E34881B3D2DB30B /* Pods_ComtradeGramFinalUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ComtradeGramFinalUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5DB8FFEB1A5981DBC1D4A43D7731D0A /* Pods-ComtradeGramFinalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ComtradeGramFinalUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AB9A74F984A77EADD1AF2EB353B43A4B /* InstagramScope.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InstagramScope.swift; path = Sources/InstagramScope.swift; sourceTree = "<group>"; };
 		ABFAFE0117CC56867FEE50547A7CBE9A /* Optional+SwiftInstagram.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Optional+SwiftInstagram.swift"; path = "Sources/Extensions/Optional+SwiftInstagram.swift"; sourceTree = "<group>"; };
@@ -109,9 +109,9 @@
 		B0D63E01ED81DA8497AF0E58E3DCD233 /* Pods-ComtradeGramFinalTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ComtradeGramFinalTests-frameworks.sh"; sourceTree = "<group>"; };
 		B105EECE766BC05A2F36B9C72C1EC8F1 /* Pods-ComtradeGramFinal-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ComtradeGramFinal-resources.sh"; sourceTree = "<group>"; };
 		B67487A4FAF59C996F6E79F61AD0B45A /* Pods-ComtradeGramFinal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ComtradeGramFinal.release.xcconfig"; sourceTree = "<group>"; };
-		B90E1D212E0C0B6DEB78FDE317F8CB94 /* Pods_ComtradeGramFinal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ComtradeGramFinal.framework; path = "Pods-ComtradeGramFinal.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B90E1D212E0C0B6DEB78FDE317F8CB94 /* Pods_ComtradeGramFinal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ComtradeGramFinal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3DE4CBDEA7D62688A0A6BB7BD2D699A /* InstagramRelationship.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InstagramRelationship.swift; path = Sources/Models/InstagramRelationship.swift; sourceTree = "<group>"; };
-		C68B46AE97921A208C66A0AFA6F11391 /* SwiftInstagram.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftInstagram.modulemap; sourceTree = "<group>"; };
+		C68B46AE97921A208C66A0AFA6F11391 /* SwiftInstagram.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftInstagram.modulemap; sourceTree = "<group>"; };
 		CBE3BF0F05A7664F1F42C695F80F9B47 /* Array+SwiftInstagram.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+SwiftInstagram.swift"; path = "Sources/Extensions/Array+SwiftInstagram.swift"; sourceTree = "<group>"; };
 		D1183E03AE537EADBF0C944414A6FF66 /* Users.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Users.swift; path = Sources/Endpoints/Users.swift; sourceTree = "<group>"; };
 		D177ADBC65430373F205689C1F03841B /* Pods-ComtradeGramFinalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ComtradeGramFinalTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -120,7 +120,7 @@
 		EE5665149C7D372703711D2F23E10942 /* Pods-ComtradeGramFinalTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ComtradeGramFinalTests-resources.sh"; sourceTree = "<group>"; };
 		F12EF9679C96DA88762EE1ECE7CD28B5 /* SwiftInstagram.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftInstagram.xcconfig; sourceTree = "<group>"; };
 		F512787EC210F96F4C2F104D9BB9B2F0 /* Locations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Locations.swift; path = Sources/Endpoints/Locations.swift; sourceTree = "<group>"; };
-		FA520C6BBF3CF86593E04C30D7BE2982 /* SwiftInstagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftInstagram.framework; path = SwiftInstagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA520C6BBF3CF86593E04C30D7BE2982 /* SwiftInstagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftInstagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE0DFDC8DBE8AFC553E99BF12A903672 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -195,7 +195,6 @@
 				7BD13335F4D10ECAFC072EBFB01224B4 /* Core */,
 				9F2960BE71B14BA07664F9E53C5A0F00 /* Support Files */,
 			);
-			name = SwiftInstagram;
 			path = SwiftInstagram;
 			sourceTree = "<group>";
 		};
@@ -439,7 +438,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0920;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -804,6 +803,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
